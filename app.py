@@ -300,7 +300,7 @@ else:
 
         time.sleep(10)
         # BLOCO: ESCOLA DE MOVIMENTOS QUANTITATIVOS
-    st.success("""
+    rua.success("""
     ### 🦅 Escola de Movimentos - Aprendizado Real
     Este painel foi desenhado para você entender o porquê do mercado e não depender de ferramentas no futuro.
     
