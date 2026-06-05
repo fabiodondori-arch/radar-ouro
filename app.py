@@ -299,9 +299,9 @@ else:
             pass
 
         time.sleep(10)
-        rua.info("""
-### 💡 Dica de Ouro do Master:
-* **Frequência:** O Radar Elite analisa ciclos fortes a cada **45 minutos**.
-* **Meta Recomendada:** Em entradas de alta probabilidade, busque alvos rápidos de **100 a 200 pontos**.
-* **Proteção:** Garanta o seu lucro no bolso e não exponha a sua banca desnecessariamente!
-""")
+     st.info("""
+    ### 💡 Dica de Ouro do Master:
+    * **Frequência:** O Radar Elite analisa ciclos fortes a cada **45 minutos**.
+    * **Meta Recomendada:** Em entradas de alta probabilidade, busque alvos rápidos de **100 a 200 pontos**.
+    * **Proteção:** Garanta o seu lucro no bolso e não exponha a sua banca desnecessariamente!
+    """)
