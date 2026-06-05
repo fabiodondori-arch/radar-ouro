@@ -299,9 +299,15 @@ else:
             pass
 
         time.sleep(10)
-     st.info("""
-    ### 💡 Dica de Ouro do Master:
-    * **Frequência:** O Radar Elite analisa ciclos fortes a cada **45 minutos**.
-    * **Meta Recomendada:** Em entradas de alta probabilidade, busque alvos rápidos de **100 a 200 pontos**.
-    * **Proteção:** Garanta o seu lucro no bolso e não exponha a sua banca desnecessariamente!
+        # BLOCO: ESCOLA DE MOVIMENTOS QUANTITATIVOS
+    st.success("""
+    ### 🦅 Escola de Movimentos - Aprendizado Real
+    Este painel foi desenhado para você entender o porquê do mercado e não depender de ferramentas no futuro.
+    
+    * **1. Quebra de Estrutura (BOS/CHoCH):** Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo da vela fechar fora, a tendência macro mudou de lado.
+    * **2. Armadilha de Liquidez (Pavio de Exaustão):** Se o Ouro deixar um pavio longo isolado na ponta de uma vela e o corpo fechar para dentro, ignore indicadores. As instituições capturaram o dinheiro do varejo e vão puxar o preço para o lado oposto.
+    * **3. Alvos de Confluência:** Quando o volume comprador/vendedor passar de 80%, o movimento tende a ser explosivo e rápido. É aí que você busca alvos curtos de 100 a 200 pontos e põe o lucro no bolso.
+    
+    **💡 Exercício Prático:** Olhe para o seu MetaTrader 5 agora. Identifique a última vela de M15 que deixou pavio longo e veja se o mercado não reverteu logo em seguida. Treine seu olho!
     """)
+  
