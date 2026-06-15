@@ -299,8 +299,8 @@ else:
             pass
 
         time.sleep(10)        
- # BLOCO NOVO: GATILHOS E ENSINAMENTO
-    rua.markdown("""
+# BLOCO NOVO: GATILHOS E ENSINAMENTO
+    st.markdown("""
     <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 15px;'>
     <h3 style='color: #00f2fe; margin-top: 0;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
     <p style='color: #ffffff;'><b>1. Quebra de Estrutura:</b> Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo fechar fora, a tendência macro mudou.</p>
