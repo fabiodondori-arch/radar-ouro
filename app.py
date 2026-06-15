@@ -279,24 +279,21 @@ else:
                     
                     # BLOCO 4: CALENDÁRIO FUNDAMENTALISTA DE PLANTÃO
                     with linha2_col2:
-                        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
-                        st.markdown("### 📢 Calendário Fundamentalista")
-                        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
-
-                    noticias = pd.DataFrame({
+        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
+        st.markdown("### 📢 Calendário Fundamentalista")
+        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
+        
+        noticias = pd.DataFrame({
             "Horário": ["09:30", "10:30", "11:00", "15:00"],
             "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
             "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
-                       })
-                       st.table(noticias)
-                       st.markdown("</div>", unsafe_allow_html=True)
+        })
+        st.table(noticias)
+        st.markdown("</div>", unsafe_allow_html=True)
 
 except Exception:
     pass
 
-# =================================================================
-# BLOCO FIXO: ESCOLA DE MOVIMENTOS E GATILHOS (FORA DO LOOP CRÍTICO)
-# =================================================================
 st.markdown("""
 <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #00f2fe;'>
 <h3 style='color: #00f2fe; margin-top: 0; font-family: sans-serif;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
