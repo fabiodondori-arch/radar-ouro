@@ -283,21 +283,21 @@ else:
                         st.markdown("### 📢 Calendário Fundamentalista")
                         st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
                         
-                        noticias = pd.DataFrame({
-                            "Horário": ["09:30", "10:30", "11:00", "15:00"],
-                            "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Taxa de Juros do FED"],
-                            "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
-                        })
-                      # Linhas finais que organizam a tabela de notícias (Por volta da linha 291)
-        st.table(noticias)
-        st.markdown("</div>", unsafe_allow_html=True)
-# =================================================================
-# BLOCO DE FECHAMENTO SEGURO DO DASHBOARD
-# =================================================================
-except Exception:
-    pass
+                       # Linhas finais que organizam a tabela de notícias
+    noticias = pd.DataFrame({
+        "Horário": ["09:30", "10:30", "11:00", "15:00"],
+        "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
+        "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
+    })
+    st.table(noticias)
+    st.markdown("</div>", unsafe_allow_html=True)
 
-# COLA O SEU BLOCO DE GATILHOS AQUI FORA DO LOOP
+                     except Exception:
+                         pass
+
+# =================================================================
+# BLOCO FIXO: ESCOLA DE MOVIMENTOS E GATILHOS (FORA DO LOOP CRÍTICO)
+# =================================================================
 st.markdown("""
 <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #00f2fe;'>
 <h3 style='color: #00f2fe; margin-top: 0; font-family: sans-serif;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
