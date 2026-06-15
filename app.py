@@ -278,7 +278,7 @@ else:
                         st.markdown("</div>", unsafe_allow_html=True)
                     
                     # BLOCO 4: CALENDÁRIO FUNDAMENTALISTA DE PLANTÃO
-                   with linha2_col2:
+                    with linha2_col2:
         st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
         st.markdown("### 📢 Calendário Fundamentalista")
         st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
