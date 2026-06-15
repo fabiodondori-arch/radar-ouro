@@ -288,23 +288,24 @@ else:
                             "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Taxa de Juros do FED"],
                             "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
                         })
-                        st.table(noticias)
-                        st.markdown("</div>", unsafe_allow_html=True)
+                      # Linhas finais que organizam a tabela de notícias (Por volta da linha 291)
+        st.table(noticias)
+        st.markdown("</div>", unsafe_allow_html=True)
 
-            else:
-                with espaco_dashboard.container():
-                    st.warning("Ajustando escala e carregando fluxo de dados do mercado...")
+        # =================================================================
+        # BLOCO NOVO: ESCOLA DE MOVIMENTOS E GATILHOS (DENTRO DO CONTEXTO)
+        # =================================================================
+        st.markdown("""
+        <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #00f2fe;'>
+        <h3 style='color: #00f2fe; margin-top: 0; font-family: sans-serif;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
+        <p style='color: #ffffff; font-size: 14px;'><b>1. Quebra de Estrutura:</b> Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo fechar fora, a tendência macro mudou.</p>
+        <p style='color: #ffffff; font-size: 14px;'><b>2. Armadilha de Liquidez:</b> Se o Ouro deixar um pavio longo isolado na ponta e o corpo fechar para dentro, as instituições capturaram o varejo. Espere a reversão.</p>
+        <hr style='border-color: #334155;'>
+        <p style='color: #ff9f43; font-size: 15px;'><b>🎯 GATILHO DE PRECISÃO:</b> Se o preço estiver centralizado (andando de lado), <b>NÃO ENTRE</b> direto na tendência. Aguarde o preço recuar até o suporte mais próximo, tocar a região e deixar um <b>pavio inferior de rejeição</b> antes de clicar.</p>
+        </div>
+        """, unsafe_allow_html=True)
 
-        except Exception:
-            pass
+    except Exception:
+        pass
 
-        time.sleep(10)        
-# BLOCO NOVO: GATILHOS E ENSINAMENTO
-    st.markdown("""
-    <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 15px;'>
-    <h3 style='color: #00f2fe; margin-top: 0;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
-    <p style='color: #ffffff;'><b>1. Quebra de Estrutura:</b> Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo fechar fora, a tendência macro mudou.</p>
-    <p style='color: #ffffff;'><b>2. Armadilha de Liquidez:</b> Se o Ouro deixar um pavio longo isolado na ponta e o corpo fechar para dentro, as instituições capturaram o varejo. Espere a reversão.</p>
-    <p style='color: #ffffff;'><b>🎯 GATILHO DE PRECISÃO:</b> Se o mercado estiver centralizado (andando de lado), <b>NÃO ENTRE</b> direto. Aguarde o preço recuar até o suporte mais próximo, tocar a região e deixar um <b>pavio inferior de rejeição</b> antes de clicar.</p>
-    </div>
-    """, unsafe_allow_html=True)
+    time.sleep(10)
