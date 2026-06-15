@@ -279,9 +279,9 @@ else:
                     
                     # BLOCO 4: CALENDÁRIO FUNDAMENTALISTA DE PLANTÃO
                     with linha2_col2:
-        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
-        st.markdown("### 📢 Calendário Fundamentalista")
-        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
+                        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
+                        st.markdown("### 📢 Calendário Fundamentalista")
+                        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
 
         noticias = pd.DataFrame({
             "Horário": ["09:30", "10:30", "11:00", "15:00"],
