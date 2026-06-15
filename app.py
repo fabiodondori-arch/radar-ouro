@@ -260,20 +260,54 @@ else:
                         st.markdown("</div>", unsafe_allow_html=True)
                     
                     # BLOCO 3: INSIGHTS DE ENTRADA DO ASSISTENTE
+                    with linha2_col1:
+                        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
+                        st.markdown("### 💡 Insights do Assistente Quantitativo")
+                        
+                        if chance_alta >= 60 and tendencia_macro == "ALTA":
+                            st.success(f"🔥 **SINAL VERDE TOTAL:** Alinhamento perfeito! Gráficos de {texto_tempo} e H1 em ALTA. Busque gatilhos de compra e segure por ~{minutos_sugeridos} min.")
+                        elif chance_baixa >= 60 and tendencia_macro == "BAIXA":
+                            st.error(f"🔥 **SINAL VERDE TOTAL:** Alinhamento perfeito! Gráficos de {texto_tempo} e H1 em BAIXA. Busque gatilhos de venda e segure por ~{minutos_sugeridos} min.")
+                        elif (chance_alta >= 60 and tendencia_macro == "BAIXA") or (chance_baixa >= 60 and tendencia_macro == "ALTA"):
+                            st.warning(f"⚡ **CUIDADO (Tendências Desalinhadas):** O gráfico de {texto_tempo} quer ir para um lado, mas o H1 está indo para o outro. Chance alta de violinada. Reduza o lote pela metade!")
+                        else:
+                            st.info("💤 **Mercado sem Direção Limpa:** Probabilidades empatadas. Aguarde a Fimathe romper os canais antes de clicar.")
+                        
+                        st.markdown("")
+                        st.caption(f"Perda máxima planejada para este trade: ${risco_financeiro:.2f} (Protegendo seu capital).")
+                        st.markdown("</div>", unsafe_allow_html=True)
+                    
+                    # BLOCO 4: CALENDÁRIO FUNDAMENTALISTA DE PLANTÃO
                     with linha2_col2:
-        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
-        st.markdown("### 📢 Calendário Fundamentalista")
-        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
-        
-        noticias = pd.DataFrame({
-            "Horário": ["09:30", "10:30", "11:00", "15:00"],
-            "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
-            "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
-        })
-        st.table(noticias)
-        st.markdown("</div>", unsafe_allow_html=True)
+                        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
+                        st.markdown("### 📢 Calendário Fundamentalista")
+                        st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
+                        
+                        noticias = pd.DataFrame({
+                            "Horário": ["09:30", "10:30", "11:00", "15:00"],
+                            "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Taxa de Juros do FED"],
+                            "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
+                        })
+                        st.table(noticias)
+                        st.markdown("</div>", unsafe_allow_html=True)
 
-    except Exception:
-        pass
+            else:
+                with espaco_dashboard.container():
+                    st.warning("Ajustando escala e carregando fluxo de dados do mercado...")
 
-    time.sleep(10)
+        except Exception:
+            pass
+
+        time.sleep(10)
+        # BLOCO: ESCOLA DE MOVIMENTOS QUANTITATIVOS
+    rua.success("""
+    ### 🦅 Escola de Movimentos - Aprendizado Real
+    Este painel foi desenhado para você entender o porquê do mercado e não depender de ferramentas no futuro.
+    
+    * **1. Quebra de Estrutura (BOS/CHoCH):** Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo da vela fechar fora, a tendência macro mudou de lado.
+    * **2. Armadilha de Liquidez (Pavio de Exaustão):** Se o Ouro deixar um pavio longo isolado na ponta de uma vela e o corpo fechar para dentro, ignore indicadores. As instituições capturaram o dinheiro do varejo e vão puxar o preço para o lado oposto.
+    * **3. Alvos de Confluência:** Quando o volume comprador/vendedor passar de 80%, o movimento tende a ser explosivo e rápido. É aí que você busca alvos curtos de 100 a 200 pontos e põe o lucro no bolso.
+    
+    **💡 Exercício Prático:** Olhe para o seu MetaTrader 5 agora. Identifique a última vela de M15 que deixou pavio longo e veja se o mercado não reverteu logo em seguida. Treine seu olho!
+    """)
+  
