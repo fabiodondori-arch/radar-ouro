@@ -298,8 +298,7 @@ else:
         except Exception:
             pass
 
-        time.sleep(10)
-        
+        time.sleep(10)        
         # BLOCO NOVO: GATILHOS E ENSINAMENTO
     rua.markdown("""
     <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 15px;'>
