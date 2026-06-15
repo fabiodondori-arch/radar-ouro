@@ -287,7 +287,7 @@ else:
             "Horário": ["09:30", "10:30", "11:00", "15:00"],
             "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
             "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
-        })
+                       })
                        st.table(noticias)
                        st.markdown("</div>", unsafe_allow_html=True)
 
