@@ -299,24 +299,13 @@ else:
             pass
 
         time.sleep(10)
-        # BLOCO: ESCOLA DE MOVIMENTOS QUANTITATIVOS E GATILHOS
-    rua.success("""
-    ### 🦅 Escola de Movimentos - Aprendizado Real
-    Este painel foi desenhado para você entender o porquê do mercado e não depender de ferramentas no futuro.
-    
-    * **1. Quebra de Estrutura (BOS/CHoCH):** Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo da vela fechar fora, a tendência macro mudou de lado.
-    * **2. Armadilha de Liquidez (Pavio de Exaustão):** Se o Ouro deixar um pavio longo isolado na ponta de uma vela e o corpo fechar para dentro, ignore indicadores. As instituições capturaram o dinheiro do varejo e vão puxar o preço para o lado oposto.
-    * **3. Alvos de Confluência:** Quando o volume comprador/vendedor passar de 80%, o movimento tende a ser explosivo e rápido. É aí que você busca alvos curtos de 100 a 200 pontos e põe o lucro no bolso.
-    """)
-
-    # NOVO BLOCO: GATILHOS DE ENTRADA DO MASTER
-    rua.info("""
-    ### ⚡ Gatilhos de Entrada (Para Refinar a Operação)
-    Se o mercado estiver "centralizado" (andando de lado), **NÃO ENTRE** direto na tendência. Aguarde um destes toques do Assistente:
-    
-    * **🎯 Gatilho 1 (O Toque de Confirmação):** Se o mercado diz que está em ALTA, espere o preço fazer um recuo e tocar na linha de suporte mais próxima. A entrada só é acionada se a vela de M1 ou M15 tocar na região e deixar um **pavio inferior**, rejeitando a queda.
-    * **⏱️ Gatilho 2 (Fechamento de Vela):** Nunca entre no meio do movimento da vela. Aguarde o fechamento do corpo. Se o mercado estiver consolidado, espere uma vela fechar **completamente acima do topo** (para Compra) ou **abaixo do fundo** (para Venda) dessa lateralização.
-    * **❌ Filtro de Proteção:** Se o preço estiver travado no meio do canal sem volume expressivo, o gatilho está **BLOQUEADO**. Aguarde o Ouro buscar as extremidades.
-    """)
-      
-  
+        
+        # BLOCO NOVO: GATILHOS E ENSINAMENTO
+    rua.markdown("""
+    <div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 15px;'>
+    <h3 style='color: #00f2fe; margin-top: 0;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
+    <p style='color: #ffffff;'><b>1. Quebra de Estrutura:</b> Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo fechar fora, a tendência macro mudou.</p>
+    <p style='color: #ffffff;'><b>2. Armadilha de Liquidez:</b> Se o Ouro deixar um pavio longo isolado na ponta e o corpo fechar para dentro, as instituições capturaram o varejo. Espere a reversão.</p>
+    <p style='color: #ffffff;'><b>🎯 GATILHO DE PRECISÃO:</b> Se o mercado estiver centralizado (andando de lado), <b>NÃO ENTRE</b> direto. Aguarde o preço recuar até o suporte mais próximo, tocar a região e deixar um <b>pavio inferior de rejeição</b> antes de clicar.</p>
+    </div>
+    """, unsafe_allow_html=True)
