@@ -288,8 +288,8 @@ else:
             "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
             "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
         })
-                        st.table(noticias)
-                        st.markdown("</div>", unsafe_allow_html=True)
+                       st.table(noticias)
+                       st.markdown("</div>", unsafe_allow_html=True)
 
 except Exception:
     pass
