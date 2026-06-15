@@ -283,7 +283,7 @@ else:
                         st.markdown("### 📢 Calendário Fundamentalista")
                         st.write("Fique de olho nos horários (Brasília) para não tomar sustos:")
 
-        noticias = pd.DataFrame({
+                    noticias = pd.DataFrame({
             "Horário": ["09:30", "10:30", "11:00", "15:00"],
             "Notícia Macro (USD)": ["Payroll / Desemprego EUA", "Abertura de Nova York", "CPI / Inflação EUA", "Discurso do FOMC / Fed"],
             "Risco": ["🔴 CRÍTICO", "🟠 VOLÁTIL", "🔴 ALTO", "🔴 CRÍTICO"]
