@@ -260,24 +260,6 @@ else:
                         st.markdown("</div>", unsafe_allow_html=True)
                     
                     # BLOCO 3: INSIGHTS DE ENTRADA DO ASSISTENTE
-                    with linha2_col1:
-                        st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
-                        st.markdown("### 💡 Insights do Assistente Quantitativo")
-                        
-                        if chance_alta >= 60 and tendencia_macro == "ALTA":
-                            st.success(f"🔥 **SINAL VERDE TOTAL:** Alinhamento perfeito! Gráficos de {texto_tempo} e H1 em ALTA. Busque gatilhos de compra e segure por ~{minutos_sugeridos} min.")
-                        elif chance_baixa >= 60 and tendencia_macro == "BAIXA":
-                            st.error(f"🔥 **SINAL VERDE TOTAL:** Alinhamento perfeito! Gráficos de {texto_tempo} e H1 em BAIXA. Busque gatilhos de venda e segure por ~{minutos_sugeridos} min.")
-                        elif (chance_alta >= 60 and tendencia_macro == "BAIXA") or (chance_baixa >= 60 and tendencia_macro == "ALTA"):
-                            st.warning(f"⚡ **CUIDADO (Tendências Desalinhadas):** O gráfico de {texto_tempo} quer ir para um lado, mas o H1 está indo para o outro. Chance alta de violinada. Reduza o lote pela metade!")
-                        else:
-                            st.info("💤 **Mercado sem Direção Limpa:** Probabilidades empatadas. Aguarde a Fimathe romper os canais antes de clicar.")
-                        
-                        st.markdown("")
-                        st.caption(f"Perda máxima planejada para este trade: ${risco_financeiro:.2f} (Protegendo seu capital).")
-                        st.markdown("</div>", unsafe_allow_html=True)
-                    
-                    # BLOCO 4: CALENDÁRIO FUNDAMENTALISTA DE PLANTÃO
                     with linha2_col2:
         st.markdown("<div class='bloco-premium'>", unsafe_allow_html=True)
         st.markdown("### 📢 Calendário Fundamentalista")
@@ -291,17 +273,7 @@ else:
         st.table(noticias)
         st.markdown("</div>", unsafe_allow_html=True)
 
-except Exception:
-    pass
+    except Exception:
+        pass
 
-st.markdown("""
-<div style='background-color: #1e293b; padding: 15px; border-radius: 10px; margin-top: 20px; border-left: 5px solid #00f2fe;'>
-<h3 style='color: #00f2fe; margin-top: 0; font-family: sans-serif;'>🦅 Escola de Movimentos & Gatilhos Finos</h3>
-<p style='color: #ffffff; font-size: 14px;'><b>1. Quebra de Estrutura:</b> Fique atento se o preço romper o topo ou fundo dos últimos 45 minutos. Se o corpo fechar fora, a tendência macro mudou.</p>
-<p style='color: #ffffff; font-size: 14px;'><b>2. Armadilha de Liquidez:</b> Se o Ouro deixar um pavio longo isolado na ponta e o corpo fechar para dentro, as instituições capturaram o varejo. Espere a reversão.</p>
-<hr style='border-color: #334155;'>
-<p style='color: #ff9f43; font-size: 15px;'><b>🎯 GATILHO DE PRECISÃO:</b> Se o preço estiver centralizado (andando de lado), <b>NÃO ENTRE</b> direto na tendência. Aguarde o preço recuar até o suporte mais próximo, tocar a região e deixar um <b>pavio inferior de rejeição</b> antes de clicar.</p>
-</div>
-""", unsafe_allow_html=True)
-
-time.sleep(10)
+    time.sleep(10)
